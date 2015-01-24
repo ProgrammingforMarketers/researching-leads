@@ -7,7 +7,7 @@ from gmail_variables import *
 urllib3.disable_warnings()
 
 gc = gspread.login(GMAIL_USERNAME, GMAIL_PASSWORD)
-wks = gc.open("Lesson 7 Sample Spreadsheet")
+wks = gc.open("YOUR SPREADSHEET")
 emailSheet = wks.worksheet("Email")
 
 emails = emailSheet.col_values(2) #This will get a list of all the emails in column 2

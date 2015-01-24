@@ -1,5 +1,5 @@
 import piplapis.search
-piplapis.search.default_api_key = '6z9w7t9b5de5juzebdpbn2cz'
+piplapis.search.default_api_key = 'YOUR API KEY'
 from piplapis.search import SearchAPIRequest
 from piplapis.data import Person, Name, Address, Job
 from piplapis.search import SearchAPIError
@@ -8,7 +8,7 @@ from gmail_variables import *
 
 
 gc = gspread.login(GMAIL_USERNAME, GMAIL_PASSWORD)
-wks = gc.open("Lesson 7 Sample Spreadsheet")
+wks = gc.open("YOUR SPREADSHEET")
 emailSheet = wks.worksheet("Email")
 emails = emailSheet.col_values(2) #This will get a list of all the emails in column 2
 emails = emails[1:] #This gets rid of the header by removing the first element (the "0th" element)
